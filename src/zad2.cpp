@@ -1,5 +1,7 @@
 #include "zad2.hpp"
 
+const double Tagliatelle::C{1.};
+
 TEST_CASE("Test polimorfizmu", "[zad2]")
 {
     Makaron* m_ptr1 = Makaron::gotujMakaron("aa");

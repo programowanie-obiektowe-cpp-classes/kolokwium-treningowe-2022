@@ -1,5 +1,7 @@
 #include "zad5.hpp"
 
+const double Tagliatelle::C{1.};
+
 Tagliatelle randomNoodle()
 {
     static std::mt19937                             prng{std::random_device{}()};

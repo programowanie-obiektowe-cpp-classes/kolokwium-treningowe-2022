@@ -1,5 +1,7 @@
 #include "zad4.hpp"
 
+const double Tagliatelle::C{1.};
+
 TEST_CASE("Test obliczania maki", "[zad4]")
 {
     CHECK(obliczMake({}) == Approx(0.));

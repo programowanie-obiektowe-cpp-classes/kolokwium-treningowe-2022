@@ -1,5 +1,7 @@
 #include "zad3.hpp"
 
+const double Tagliatelle::C{1.};
+
 struct Sos
 {
     std::size_t polej(const Tagliatelle& t) const

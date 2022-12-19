@@ -1,5 +1,6 @@
 # Instrukcja
 Zadania wykonuj uzupełniając pliki `.hpp` w folderze `include`.
+Nie modyfikuj zawartości katalogu `src`.
 Po rozwiązaniu wszystkich zadań (lub upłynięciu czasu pracy) oddaj kolokwium `git push`ując do zdalnego repozytorium.
 Projekt definiuje zasady kompilacji dla 5 osobnych plików wykonaywalnych odpowiadających poszczególnym zadaniom.
 
