@@ -1,6 +1,8 @@
 # Kolokwium I - Makarony
 _Czas pracy: 90 minut_
 
+**Informacje technicze znajdziesz w pliku `Instrukcja.md`.**
+
 ## Zadanie 1
 Napisz klasę `Tagliatelle`, która posiada:
 - prywatne pole `double L`, reprezentujące długość kawałka makaronu

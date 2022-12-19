@@ -1,13 +1,14 @@
 cmake_minimum_required(VERSION 3.8)
 project(kolokwium)
 
-add_executable(kolokwium src/tests_main.cpp
-        src/zad1.cpp
-#        src/zad2.cpp
-#        src/zad3.cpp
-#        src/zad4.cpp
-#        src/zad5.cpp
-        )
+macro(defProblem name source)
+  add_executable("${name}" "${source}" "src/tests_main.cpp")
+  set_target_properties("${name}" PROPERTIES CXX_STANDARD 17)
+  target_include_directories("${name}" PUBLIC include)
+endmacro()
 
-set_target_properties(kolokwium PROPERTIES CXX_STANDARD 17)
-target_include_directories(kolokwium PUBLIC include)
+defProblem(zad1 src/zad1.cpp)
+defProblem(zad2 src/zad2.cpp)
+defProblem(zad3 src/zad3.cpp)
+defProblem(zad4 src/zad4.cpp)
+defProblem(zad5 src/zad5.cpp)
