@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.20)
 project(kolokwium)
 
 macro(defProblem name source)
   add_executable("${name}" "${source}" "src/tests_main.cpp")
-  set_target_properties("${name}" PROPERTIES CXX_STANDARD 17)
+  set_target_properties("${name}" PROPERTIES CXX_STANDARD 23)
   target_include_directories("${name}" PUBLIC include)
 endmacro()
 
